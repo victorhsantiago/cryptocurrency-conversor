@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Criptomoedas</title>
+</head>
+
+<body>
+
+    <nav class="navbar bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="image/bitcoin.png" alt="Bitcoin">
+            </a>
+            <span class="nav-title">Criptomoedas</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>Dilmês</h1>
+                <p>
+                    Primeiro eu queria cumprimentar os internautas. -Oi Internautas! Depois dizer que o meio ambiente é sem dúvida nenhuma uma
+                    ameaça ao desenvolvimento sustentável. E isso significa que é uma ameaça pro futuro do nosso planeta
+                    e dos nossos países. O desemprego beira 20%, ou seja, 1 em cada 4 portugueses.
+                </p>
+                <div id="coinsTable">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Rank</th>
+                                <th scope="col">Nome</th>
+                                <th scope="col">Símbolo</th>
+                                <th scope="col">R$</th>
+                                <th scope="col">US$</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-group">
+                    <li class="list-group-item pb-4">Links</li>
+                    <li class="list-group-item">
+                        <a href="#">Bitcoin</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">Eth</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">DOGE Coin</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">Cage Coin</a>
+                    </li>
+                </ul>
+                <div class="card bg-light mt-4">
+                    <div class="card-body">
+                        <h2>Conversor</h2>
+                        <form id="conversor">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">R$</span>
+                                </div>
+
+                                <input type="number" min="1" class="form-control" id="inputValue" required>
+
+                                <div class="input-group-append">
+                                    <span class="input-group-text">,00</span>
+                                </div>
+                            </div>
+                            <div id="selectCoins">
+                                <div class="input-group mb-3">
+                                    <select class="custom-select" id="coins">
+
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Converter</button>
+                        </form>
+                        <p class="mt-3 mb-0 font-weight-bold">Resultado:
+                            <span id="result">
+
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-3 bg-light text-center">
+        Copyright &copy; 2018
+    </footer>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
